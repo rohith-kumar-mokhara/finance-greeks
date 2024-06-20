@@ -1,0 +1,33 @@
+@import '../../../styles/color.scss';
+
+.labeled-button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+
+    &.secondary{
+        background-color: white;
+        border: blue 1px solid;
+        color: blue;
+
+        &:hover{
+            background-color: rgb(0, 72, 255);
+            color: white;
+        }
+    }
+
+    &.warning{
+        background-color: $warningColor;
+    }
+
+    &.round{
+        border-radius: 5px;
+    }
+
+    &.disabled{
+        cursor: not-allowed;
+        background-color: $disabledColor;
+    }
+}

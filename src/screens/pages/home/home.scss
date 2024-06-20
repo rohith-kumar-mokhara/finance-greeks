@@ -1,0 +1,17 @@
+.home{
+    width: 100%;
+
+    .news-container{
+        width: 100%;
+        .left-news-container{
+            width: 50%;
+            float: left
+        }
+        
+        .right-news-container{
+            width: 50%;
+            float: right
+        }
+    }   
+}
+

@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  //   border-bottom: 1px solid black;
+  box-shadow: 1px 1px 5px grey;
+
+  &.disabled {
+    display: none;
+  }
+
+  .mid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    height: 100%;
+  }
+
+  .right {
+    .auth-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7px;
+
+      .auth-button {
+        &:hover,
+        &.active {
+          font-weight: 500;
+          cursor: pointer;
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import '.././../styles/color.scss';
+
+.dropdown{
+    color: black;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+
+    .title-container{
+        padding: 5px 10px;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+
+        &.dark{
+            border: 1px solid black;
+        }
+
+        .title{
+            color: rgb(75, 75, 75);
+            width: 100%;
+        }
+
+        .down-arrow{
+            height: 18px;
+            transform: rotate(-90deg);
+            animation: arrowAnimate 0.5s alternate; 
+        }
+        @keyframes arrowAnimate {
+            0%{
+                transform: rotate(-90deg);
+            }
+            100%{
+                transform: rotate(0);
+            }
+        }
+    }
+
+    .menu{
+        background-color: white;
+        margin: 10px 0;
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        border-radius: 5px;
+
+        &.dark{
+            border: 1px black solid;
+        }
+
+        &.active{
+            display: block;
+        }
+
+        .option-bar{
+            padding: 5px 10px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #225b72a5;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.nav-element {
+  text-decoration: none;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+
+  &.active {
+    color: blue;
+    border-bottom: blue 2px solid;
+    font-weight: bold;
+  }
+}
